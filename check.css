@@ -1,0 +1,462 @@
+/* Reset some default styles */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300;1,400&family=Roboto+Slab&family=Roboto:wght@300&display=swap');
+
+body {
+    background: linear-gradient(90deg, #eaeaea, #ecf6ff);
+}
+
+#main {
+    width: 100%;
+    height: auto; 
+    margin: 0 auto; 
+    padding: 21px 0; 
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box; 
+}
+
+nav h2 {
+    color: black;
+    font-size: 2rem; 
+}
+
+nav h2 span {
+    color: #0386ff;
+    font-size: 2rem; 
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    text-align: center;
+    font-size: 1rem; 
+    text-decoration: none !important;
+    padding: 12px;
+}
+
+nav ul li a {
+    text-decoration: none !important;
+}
+
+nav .signature {
+    padding-left: 2rem;
+}
+
+nav button {
+    height: 2.5rem; 
+    width: 8rem; 
+    margin-right: 2rem;
+    background-color: #0386ff;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 25px;
+}
+
+nav button:hover {
+    background-color: #025ea2;
+    color: white; 
+    cursor: pointer; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .signature {
+        padding-left: 0;
+    }
+
+    nav button {
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+}
+
+/* after nav editing */
+#section {
+    padding-left: 50px;
+    padding-top: 80px;
+    font-weight: 700;
+    color: #2a3440;
+    display: flex;
+}
+
+#left {
+    width: 50%;
+    position: relative;
+}
+
+#left h3 {
+    font-size: 44px;
+    font-weight: 500;
+    color: #2a3440;
+}
+
+#left h1 {
+    font-size: 77px;
+    font-weight: 700;
+    color: #2a3440;
+    line-height: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#left h1 #text {
+    font-size: 85px;
+    font-weight: 700;
+    color: #0386ff;
+    line-height: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#left p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #8a8a8a;
+}
+
+
+
+/* Style the right side containing the image */
+
+
+
+#section .right img {
+    max-width: 100%;
+    width: auto; 
+    height: auto;
+    max-height: 75%;
+    padding-left: 170px;
+}
+.btn{
+    display: flex;
+    padding-left: 25px;
+    margin-top: 10px;
+    
+}
+.btn .contactme {
+    font-size: medium;
+    width: 180px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 18px;
+    background-color: #0386ff;
+    border: 2px solid #fff;
+}
+
+
+.btn .pic {
+    height: 20px;
+    margin-left: 6px;
+    filter: invert(1); 
+}
+
+/* Social Media icons */
+.ocialbtn{
+    display: flex;
+}
+.meidaButtons{
+    display: flex;
+    list-style: none;
+    align-items: start;
+    padding: 18px;
+    gap: 42px;
+}
+
+/* About me cart and pp ! */
+/* About Me Card */
+.aboutmeCart {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0 4px 12px rgba(156, 134, 134, 0.2); /* Adjust the shadow values */
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally within the container */
+    justify-content: center; /* Center vertically within the container */
+}
+
+
+  
+
+
+/* Profile Round Box */
+.profile-box {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #007BFF;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 12px auto;
+}
+
+
+.aboutmeCart .container {
+    padding: 20px;
+}
+
+.aboutmeCart .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto; /* Center horizontally within the container */
+}
+
+.aboutmeCart h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.aboutmeCart p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.aboutmeCart .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.aboutmeCart .button:hover {
+    background-color: #0056b3;
+}
+
+/* Section that contains skill area */
+.container{
+    position: relative;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.Proficiency{
+    font-size: 32px;
+    padding-top: 32px;
+}
+.container .skill-box{
+    width: 100%;
+    margin: 25px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #4070f4;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-per.css{
+    width: 70%;
+    animation-delay: 0.1s;
+}
+.titles{
+    font-size: 18px;
+}
+.skill-per.javascript{
+    width: 50%;
+    animation-delay: 0.2s;
+}
+.skill-per.nodejs{
+    width: 30%;
+    animation-delay: 0.3s;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+
+
+
+
+/* Card css */
+        /* Card container styles */
+        section{
+            margin-top: 18px;
+            
+        }
+
+        
+        .headingOfCard{
+            font-size: 49px;
+            display: flex;
+            margin-top: 55px;
+            justify-content: center;
+            align-items: center;
+        }
+        .cardsSection{
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            padding-top: 18px;
+            width: 450px;
+            margin: 38px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Card title styles */
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Card content styles */
+        .card-content {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Card image styles */
+        .card-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+
+
+
+
+        /* Footer Section Goes from here */
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 109px 0;
+    margin-top: 82px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-social a {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Add hover effect to social icons */
+.footer-social a:hover {
+    color: #007bff;
+}
